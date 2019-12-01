@@ -1,0 +1,15 @@
+
+# Charles Tung Fang, HW2, Problem #1, 4/17 2019
+
+# Begin with an empty directory
+
+echo GoHuskies #simply print on standard out
+
+echo GoHuskies > GoHuskies && cat GoHuskies #store "GoHuskies" in a file GoHuski
+
+ls #It's an empty directory so print out the GoHuskies file in the current direc
+
+grep GoHuskies GoHuskies #looks for text "GoHuskies" within file GoHuskies
+
+alias GoHuskies='' #Create an alias GoHuskies that doesn't do anything
+GoHuskies # Call the alias we just created

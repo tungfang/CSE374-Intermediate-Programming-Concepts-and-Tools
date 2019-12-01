@@ -1,0 +1,5 @@
+#Charles Tung Fang, HW3 #4
+
+1. The script sets the axis labels. X for rank and Y for Size in bytes, and then it creats a output file named scatterplot.eps. The output file is plotted with data gather on the x axis and y axis.
+
+2. I expected the popular website would very small index pages because they need to handle a heavy user load. However, looking at the scatterplot, there is not a clear relationship or trend between the popularity of a site and the size of its index.html file.

@@ -1,0 +1,24 @@
+#!/bin/bash
+#Charles Tung Fang, HW2, Problem #4, 4/17 2019
+
+#Given fewer than 2 arguments
+if [ "$#" -lt 2 ]; then
+    echo "Given fewer than 2 arguments"
+    exit 1
+fi
+
+FILE="$1"
+COUNT=0 #keep track of total lines
+
+shift
+
+date >> "$FILE" #append date and time to the file
+wc -l "$@" >> "$FILE"
+
+#adds the line to output the total for one file case
+if [ $# == 1 ]; then
+    res=$(wc -l "$1" | egrep -o [0-9]*)
+    echo $res" total">>"FILE"
+fi
+
+exit

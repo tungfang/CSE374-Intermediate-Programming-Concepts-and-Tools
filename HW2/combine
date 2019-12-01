@@ -1,0 +1,28 @@
+#!/bin/bash
+#Charles Tung Fang, HW2, Problem #3, 4/17 2019
+
+#given less than 2 arguments
+if [ $# -lt 2 ]; then
+    echo "Fewer than two arguments are given." >&2
+    exit 1
+fi
+
+FILE="$1"
+
+#file or directory f1 already exists
+if [ -e "$FILE" ]; then
+    echo "Error: first file exists" >&2
+    exit 1
+fi
+
+shift
+
+#concatenate the contents of files and cat them to stdout.
+#error message to f1
+for f in "$@"
+do 
+    cat "$f" 2>> "$FILE"
+    shift
+done
+
+exit 0

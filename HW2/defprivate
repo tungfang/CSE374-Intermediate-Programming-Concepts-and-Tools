@@ -1,0 +1,4 @@
+#!/bin/bash
+#Charles Tung Fang, HW2, Problem #2, 4/17 2019
+
+alias private='chmod -R g=u,o-w' #change file access permissions for a filethat group permission equal to the user and remove other's permission to write.

@@ -1,0 +1,25 @@
+1. Charles Tung Fang
+
+2. emacs
+
+3. wc prints newline, word, and byte counts for each file. -l, -lines, option for wc prints the newlines counts.
+
+4. 379   438 18327 /etc/passwd
+
+5. Kill command can be used to terminate/stop a process.
+
+6. $HOME stores the location of current user's home directory.
+
+7. $USER and $PS1.
+$USER stores the username and show which user is logged in. It's important because different users have different access to files and permission.
+$PS1 is the default prompt in bash. It's important because it stores the text that makes up the prompt. 
+
+8. Locate command can be used to find it
+
+9. Which command looks for an executable file by searching for it in the directories in the PATH environmental variable. However, locate command is valid for any file, not just executable ones.
+
+10. The first command send 'Hello World!' to a destination file named hello while the second command sends its output to stdout, which is the command line output.
+
+11. Execute echo wonderful day > hello will overwrite the previous work 'Hello World!' in hello file.
+
+12. Execute echo wonderful day >> hello will append to the echo text to the hello file. It will not overwrite like the previous case.

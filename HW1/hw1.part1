@@ -1,0 +1,73 @@
+Script started on Sat 06 Apr 2019 09:53:03 AM PDT
+]0;tungfang@klaatu:~[?1034h[tungfang@klaatu ~]$ echo Greeting,C[K CSE374
+Greeting, CSE374
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ passwd
+Changing password for user tungfang.
+Changing password for tungfang.
+(current) UNIX password: 
+New password: 
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ date
+Sat Apr  6 09:54:17 PDT 2019
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ pwd
+/homes/tungfang
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ cd ~
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ ls -als[K[K[K[K[K
+#hw0.script#  hw0.script  hw1.part1
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ mkdir [K[K[K[K[K[K#list all the files using -a
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ ls -a
+[0m[01;34m.[0m              .bash_logout   .emacs        hw0.script  [01;34m.mozilla[0m  .zshrc
+[01;34m..[0m             .bash_profile  [01;34m.emacs.d[0m      hw1.part1   [01;34m.ssh[0m
+.bash_history  .bashrc        #hw0.script#  .kshrc      .viminfo
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ mkdir temp
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ mv temp HWFiles
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ cd HWFiles/
+]0;tungfang@klaatu:~/HWFiles[tungfang@klaatu HWFiles]$ date > now
+]0;tungfang@klaatu:~/HWFiles[tungfang@klaatu HWFiles]$ cp now before
+]0;tungfang@klaatu:~/HWFiles[tungfang@klaatu HWFiles]$ ls -l
+total 8
+-rw-rw-r-- 1 tungfang tungfang 29 Apr  6 10:08 before
+-rw-rw-r-- 1 tungfang tungfang 29 Apr  6 10:07 now
+]0;tungfang@klaatu:~/HWFiles[tungfang@klaatu HWFiles]$ touch tempdata[1Pmpdata[C[C[C[C[C[C
+]0;tungfang@klaatu:~/HWFiles[tungfang@klaatu HWFiles]$ mv tmpdata tet[Kst
+]0;tungfang@klaatu:~/HWFiles[tungfang@klaatu HWFiles]$ cd ..
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ rm -r HWFiles/
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ echo For my eyes only > secretfile
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ [K[tungfang@klaatu ~]$ [K[tungfang@klaatu ~]$ chmod -w secretfile 
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ ls -l
+total 12
+-rw-rw-r-- 1 tungfang tungfang 856 Apr  5 10:17 #hw0.script#
+-rw-rw-r-- 1 tungfang tungfang 859 Apr  3 23:08 hw0.script
+-rw-rw-r-- 1 tungfang tungfang   0 Apr  6 09:53 hw1.part1
+-r--r--r-- 1 tungfang tungfang  17 Apr  6 10:21 secretfile
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ cat 'more text [K[K[K[K[K[K[K[K[K[Kadding more text' >> secretfile 
+bash: secretfile: Permission denied
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ chomd -r secretfile 
+bash: chomd: command not found
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ #typo for chmod
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ chmod -r secretFile[K[K[K[Kfile 
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ ls -l
+total 12
+-rw-rw-r-- 1 tungfang tungfang 856 Apr  5 10:17 #hw0.script#
+-rw-rw-r-- 1 tungfang tungfang 859 Apr  3 23:08 hw0.script
+-rw-rw-r-- 1 tungfang tungfang   0 Apr  6 09:53 hw1.part1
+---------- 1 tungfang tungfang  17 Apr  6 10:21 secretfile
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ cat secretfile 
+cat: secretfile: Permission denied
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ uname -r
+4.9.84-1.el7.retpoline.x86_64
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ ps -u
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+tungfang 11331  0.0  0.0 115400  3248 pts/2    Ss+  09:30   0:00 -bash
+tungfang 12096  0.0  0.0 115400  3340 pts/7    Ss   09:40   0:00 -bash
+tungfang 12827  0.0  0.0 114156  1900 pts/7    S+   09:53   0:00 script hw1.part
+tungfang 12829  0.0  0.0 114160  1232 pts/7    S+   09:53   0:00 script hw1.part
+tungfang 12830  0.0  0.0 115404  3292 pts/22   Ss   09:53   0:00 bash -i
+tungfang 15432  0.0  0.0 151076  3776 pts/22   R+   10:36   0:00 ps -u
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ grep tungfang /etc[K[K[K[K/etc/passwd
+[01;31m[Ktungfang[m[K:x:28512:28512::/homes/[01;31m[Ktungfang[m[K:/bin/bash
+]0;tungfang@klaatu:~[tungfang@klaatu ~]$ exit
+exit
+
+Script done on Sat 06 Apr 2019 10:40:50 AM PDT
